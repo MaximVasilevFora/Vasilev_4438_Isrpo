@@ -20,9 +20,24 @@ namespace Vasilev_4338_Isrpo_Lr1
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		public static WelcomeWindow welcomeWindow;
 		public MainWindow()
 		{
 			InitializeComponent();
+		}
+
+		private void Next_Click(object sender, RoutedEventArgs e)
+		{
+			if (welcomeWindow == null)
+			{
+				welcomeWindow = new WelcomeWindow();
+				welcomeWindow.Show();
+			}
+		}
+
+		private void WelcomeText_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+		{
+			MessageBox.Show("Еще раз привет!)");
 		}
 	}
 }

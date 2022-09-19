@@ -8,10 +8,10 @@
         Title="MainWindow" Height="150" Width="200">
     <Grid>
 		<StackPanel HorizontalAlignment="Center">
-			<TextBlock Margin="20">
+			<TextBlock Margin="20" Name="WelcomeText" MouseLeftButtonUp="WelcomeText_MouseLeftButtonUp">
 				Приветствую тебя, странник!
 			</TextBlock>
-			<Button Width="70" Height="30">
+			<Button Width="70" Height="30" Name="Next" Click="Next_Click">
 				Далее
 			</Button>
 		</StackPanel>

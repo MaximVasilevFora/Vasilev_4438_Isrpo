@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vasilev_4338_Isrpo_Lr1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="150" Width="200">
     <Grid>
-
+		<StackPanel HorizontalAlignment="Center">
+			<TextBlock Margin="20">
+				Приветствую тебя, странник!
+			</TextBlock>
+			<Button Width="70" Height="30">
+				Далее
+			</Button>
+		</StackPanel>
     </Grid>
 </Window>
